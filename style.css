@@ -1,0 +1,119 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f8ff;
+  }
+  
+  /* Contact Form */
+  .container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  .error {
+    color: red;
+    font-size: 0.9em;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 14px 0;
+    margin-top: 40px;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+  }
+  .navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+  }
+  
+  /* Grid Layout */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  .grid-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  /* To-Do List */
+  .todo-section {
+    margin-top: 40px;
+  }
+  #taskInput, #addTaskBtn {
+    padding: 10px;
+    margin: 5px;
+  }
+  #taskInput {
+    width: 70%;
+  }
+  #addTaskBtn {
+    width: 25%;
+    background-color: #28a745;
+  }
+  #addTaskBtn:hover {
+    background-color: #218838;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    background: #ffffff;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+  }
+  .remove-btn {
+    position: absolute;
+    right: 10px;
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .remove-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive for smaller devices */
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+    }
+  }
+  

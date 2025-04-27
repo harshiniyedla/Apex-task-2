@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Form and To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Contact Form Section -->
+<div class="container">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+    <div id="error" class="error"></div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<!-- Navigation -->
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- Grid Layout -->
+<div class="grid-container">
+  <div class="grid-item">Box 1</div>
+  <div class="grid-item">Box 2</div>
+  <div class="grid-item">Box 3</div>
+  <div class="grid-item">Box 4</div>
+</div>
+
+<!-- To-Do List Section -->
+<div class="todo-section">
+  <h2>My To-Do List</h2>
+  <input type="text" id="taskInput" placeholder="Add a new task">
+  <button id="addTaskBtn">Add</button>
+  <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
